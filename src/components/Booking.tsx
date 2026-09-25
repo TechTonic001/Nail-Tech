@@ -1,0 +1,6 @@
+import { motion } from 'framer-motion'
+import { Check, CreditCard } from 'lucide-react'
+
+export function Booking() {
+  return <section className="overflow-hidden bg-[#c08552] px-5 py-20 text-[#fffaf5] md:px-10 md:py-24"><motion.div initial={{ opacity: 0, scale: .9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: .45 }} className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 md:flex-row md:items-center"><div className="flex items-start gap-5"><div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-white/40"><CreditCard size={24} /></div><div><p className="eyebrow text-white/70">A little note from us</p><h2 className="font-serif text-3xl md:text-4xl">Payment Validates Bookings</h2><p className="mt-3 max-w-xl text-sm leading-6 text-white/80">Your appointment is officially confirmed once payment has been made. This helps us reserve your special time just for you.</p></div></div><div className="flex items-center gap-2 text-sm font-semibold"><Check size={18} /> Simple. Secure. Confirmed.</div></motion.div></section>
+}

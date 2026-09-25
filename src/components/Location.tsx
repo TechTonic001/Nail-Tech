@@ -1,0 +1,6 @@
+import { motion } from 'framer-motion'
+import { ArrowUpRight, MapPin } from 'lucide-react'
+
+export function Location() {
+  return <section id="location" className="bg-[#f5ebe0] px-5 py-24 md:px-10 md:py-32"><motion.div initial={{ opacity: 0, x: -35 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: .5 }} className="mx-auto flex max-w-7xl flex-col justify-between gap-12 md:flex-row md:items-center"><div><p className="eyebrow">Come see us</p><h2 className="section-title">Your beauty<br /><em>destination.</em></h2></div><div className="w-full max-w-xl rounded-3xl bg-[#fffaf5] p-8 shadow-[0_20px_60px_rgba(74,44,29,.08)] md:p-10"><div className="flex gap-5"><div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#4a2c1d] text-[#e6b98e]"><MapPin size={22} /></div><div><p className="text-xs font-semibold uppercase tracking-[.2em] text-[#c08552]">Find the atelier</p><h3 className="mt-3 font-serif text-2xl">Okelerin Junction,<br />Ogbomoso, Oyo State</h3><a href="https://www.google.com/maps/search/Okelerin+Junction,+Ogbomoso" target="_blank" rel="noreferrer" className="mt-7 inline-flex items-center gap-2 text-sm font-semibold underline decoration-[#c08552] underline-offset-4">Open in Maps <ArrowUpRight size={15} /></a></div></div></div></motion.div></section>
+}
